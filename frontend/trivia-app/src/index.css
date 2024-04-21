@@ -11,3 +11,93 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+#logindiv {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+#logindiv p {
+  font-size: 50px;
+}
+
+#logindiv input {
+  width : 100%;
+}
+
+.gamePage {
+  text-align: center;
+  padding: 20px;
+}
+
+.gamePage h1 {
+  margin-bottom: 20px;
+}
+
+.lobbyPage {
+  text-align: center;
+  padding: 20px;
+}
+
+.lobbyPage h1 {
+  margin-bottom: 20px;
+}
+
+
+
+button {
+  margin: 10px;
+  margin-left: 0px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  background-color: #0000FF;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.answerButtons {
+  display: flex;
+}
+
+.answerButton { 
+  margin: 10px;
+  margin-left: 0px;
+  padding: 10px;
+  width: 10%;
+  border: none;
+  flex-grow: 1;
+  border-radius: 5px;
+  background-color: #0000FF;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.answerButton:hover {
+  background-color: #000000;
+}
+
+#timer {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width:500px) {
+  .answerButtons {
+    display: inline-block;
+  }
+  .answerButton {
+    width: 100%;
+  }
+}
