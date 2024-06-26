@@ -6,6 +6,9 @@ class LoginPage extends React.Component {
         return (
             <div id='logindiv' style={this.props.style}>
                 <form onSubmit={this.props.submitHandler}>
+                    <p>Username:</p>
+                    <input type='text' name='username' placeholder='Sherlock Holmes' onChange={this.props.changeHandler}></input>
+                    <br/>
                     <p>Lobby Code:</p>
                     <input type='text' name='lobbyCode' placeholder='ABC1' onChange={this.props.changeHandler}></input>
                     <br/>
@@ -61,6 +64,7 @@ class Main extends React.Component {
             playerCount: 0,
             timer: null,
             question: {},
+            username: null,
         }
     }
 

@@ -76,7 +76,7 @@ function readQuestions() {
         return parseCSVData(data);
     } catch (error) {
         console.error('Error reading question bank data:', error);
-        process.exit(1); // Terminate the process if an error occurs
+        process.exit(1);
     }
 }
 
